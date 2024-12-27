@@ -1,0 +1,199 @@
+/* * General styles */ 
+.hero {
+    
+    color: white;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+/* Background image animation */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundChange 15s infinite;
+}
+
+/* Keyframe animations for background images */
+@keyframes backgroundChange {
+    0% { background-image: url('../images/about/full-shot-woman-gardening-1.jpg'); }
+    33% { background-image: url('../images/about/women-working-together-front-view.jpg'); }
+    66% { background-image: url('../images/products/crate-egg.jpg'); }
+    100% { background-image: url('../images/products/chicken5.jpg'); }
+}
+
+/* Hero content styles */
+.hero-content {
+    z-index: 1;
+    padding: 40px 20px; /* Reduced padding for smaller screens */
+    background: rgba(7, 53, 9, 0.596); /* Optional background for better text visibility */
+}
+
+.white-mark {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 55%;
+}
+
+.orange {
+    width: 18%;
+    height: 10px;
+    background-color: #F7C35F;
+    margin-bottom: -10px;
+}
+
+.hero-text {
+    padding: 0px;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.hero-text h1 {
+    font-weight: 400;
+    font-size: 5rem; /* Use responsive units */
+    line-height: 1.2;
+    color: white !important;
+     /* Center align for smaller screens */
+}
+
+.hero-text p {
+    font-size: 2.4rem;
+    font-weight: 600;
+     /* Center align for smaller screens */
+}
+
+
+.hero-second img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .orange {
+        width: 18%; /* Make orange bar more prominent */
+    }
+
+    .hero-second {
+        max-width: 90%; /* Reduce width for smaller screens */
+        border-top-right-radius: 100px;
+    }
+
+    .hero-2-div {
+        gap: 10px; /* Reduce gap between elements */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .orange {
+        width: 20%; /* Increase orange bar for better visibility */
+        margin-bottom: -5px;
+    }
+
+    .hero-second img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero-2-div {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px;
+    }
+
+    .hero-second {
+        margin-bottom: 15px;
+    }
+}
+
+.hero-2-div {
+    display: flex;
+    gap: 20px; /* Space between the cards */
+    justify-content: center; /* Center the cards */
+    align-items: flex-end; /* Align cards to the top */
+    margin-top: 40px;
+}
+    
+.hero-second {
+    flex: 1; /* Allow flexibility */
+    max-width: 300px; /* Set maximum width */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: white; /* Text color */
+    
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distribute content evenly */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+    border-top-right-radius: 100px;
+    border: 1px white solid;
+}
+
+.hero-second:nth-child(3) {
+    min-height: 390px; /* Specific height for the first card */
+}
+
+.hero-second:nth-child(2) {
+    min-height: 440px; /* Specific height for the second card */
+}
+
+.hero-second:nth-child(1) {
+    min-height: 490px; /* Specific height for the third card */
+}
+
+.hero-second:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+.hero-second img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+}
+
+.hero-second h4 {
+    font-weight: 700; /* Bold */
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.hero-second p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-2-div {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 15px;
+    }
+
+    .hero-second {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}

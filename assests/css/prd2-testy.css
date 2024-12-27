@@ -1,0 +1,270 @@
+.product-section {
+  background-color: #f8f9fa;
+}
+.line{
+  
+  width: 30%;
+  padding: .04rem;
+  background-color: black;
+}
+.section-title {
+  color: #2f5a41;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+    .section-title {
+        color: #255946;
+        font-size: 4.3rem;
+        font-weight: bold;
+    }
+    .quality-text {
+      line-height: 31px;
+  }
+
+  .div-flex {
+    display: flex;
+    flex-wrap: no-wrap;
+    align-items: center;
+    align-items: stretch;
+    
+}
+
+ 
+    .img-div7 {
+      width: 50%;
+      height: 300px;
+      overflow: hidden;
+      background-image: url(../images/product2/d-1.png);
+      background-position: center;
+      background-size: 100%;
+      /* Default background size */
+      background-repeat: no-repeat;
+      
+    }
+
+  
+ 
+
+  .lead2{
+    width: 50%;
+    /* border: 2px red solid; */
+  }
+
+
+   
+  
+.section-sub-title {
+  color: #255946;
+  font-size: 3rem;
+}
+
+.assured-quality-sub {
+  display: flex;
+  gap: 1em;
+}
+.img-zoom {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease-out;
+}
+
+.zoom-wrapper {
+overflow: hidden;
+position: relative;
+height: 400px;
+width: 100%;
+}
+
+
+.indulge-ul {
+  /* border: 2px red solid; */
+  list-style-type: disc !important; /* Ensure the list uses a disc bullet */
+  list-style-position: outside; /* Place the bullet outside the content box */
+  margin-left: 20px; /* Add some space for the bullet to display properly */
+  padding-left: 0; /* Adjust padding if necessary */
+}
+
+.indulge-ul li {
+  display: list-item; /* Ensure the list item retains its default display */
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+  @media (min-width: 768px) {
+      .zoom-wrapper {
+          height: 500px;
+      }
+     
+  }
+
+  .scroll-wrapper {
+      overflow: hidden;
+      height: 400px;
+      position: relative;
+      width: 100%;
+  }
+  @media(max-width: 990px){
+    .div-flex{
+      justify-content: space-between;
+      gap: 30px;
+     
+    }
+    
+  
+  
+  
+    .img-div7{
+      flex: 1; 
+      
+      width: 30%;
+      height: 170px;
+     
+      
+      }
+  
+      .lead2{
+       
+        width: 70%;
+        /* border: 2px red solid; */
+        height: inherit;
+      }
+
+      .h-25{
+        height: 10% !important;
+        /* border: 2px red solid; */
+      }
+      .zoom-wrapper {
+      width: 100%;
+        height: 250px !important;
+        object-fit: cover;
+    }
+    .zoom2{
+      height: 400px !important;
+      object-fit: contain;
+    }
+
+    .img-zoom{
+      object-fit: cover;
+      object-position: middle;
+      width: 100% !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+      .scroll-wrapper {
+          height: 500px;
+      }
+  }
+
+  @media (max-width: 768px) {
+  
+    .div-flex {
+      flex-direction: column;
+  }
+  
+
+.img-div7 {
+    order: 1;
+    flex: 0;
+    flex-shrink: 0;
+    width: 100%;
+    
+    /* border: 2px yellow solid; */
+   padding: 60px;
+}
+
+.lead {
+    order: 2; 
+    width: 100%;
+}
+
+  
+}
+
+    @media (max-width: 768px) {
+        .assured-quality-sub {
+            flex-direction: column-reverse;
+        }
+    }
+    .testimonial-section {
+      background-color: #f5f5f1;
+    }
+    .star-rating {
+      color: #ffd700; 
+    }
+    
+
+    .testimonial-section-title {
+        color: #255946;
+        font-size: 3rem;
+        border-top: 1px solid #799778;
+    }
+
+    .testimonial-section,
+    .product-section {
+        background-color: #F7F4EB;
+    }
+
+    .star-rating {
+        color: #FFD700;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: #2F5A41;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+
+    #qualityCarousel>.carousel-indicators [data-bs-target] {
+        background-color: #fff;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    
+  
+    .testimonial-text {
+        min-height: 200px;
+        cursor: grab;
+    }
+
+   
+  
+
+    @media (max-width: 576px) {
+        .section-title {
+            font-size: 3.3rem;
+            line-height: 4rem;
+        }
+
+        .section-sub-title {
+            font-size: 2rem;
+        }
+
+        .testimonial-section-title {
+            font-size: 2rem;
+        }
+
+        line{
+    
+          width: 100%;
+          
+          background-color: black;
+      }
+
+      .div-flex{
+        gap: 50px;
+      }
+
+      .quality-text{
+        line-height: 3rem;
+      }
+    }
+    

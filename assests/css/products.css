@@ -1,0 +1,69 @@
+
+*
+ {
+  padding: 0; 
+  margin: 0;
+  box-sizing: border-box;
+  /* list-style-type: none; */
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    /* border: 2px red solid; */
+  }
+  .carousel-indicators button {
+    background-color: #333;
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .products{
+    /* background: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%); */
+    background-color: #f7f4eb;
+    /* border: 2px red solid; */
+  }
+  .headings {
+    border-bottom: 1px #137547 solid;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+}
+
+.headings h1 {
+    font-size: 6vw; /* Scales based on viewport width */
+    line-height: 1.2; /* Maintains proportional spacing */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #255946;
+}
+
+/* Media queries for fine-tuning on smaller screens */
+@media (max-width: 768px) {
+    .headings h1 {
+        font-size: 8vw; /* Slightly larger for readability on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .headings h1 {
+        font-size: 10vw; /* Further adjust for very small screens */
+    }
+}
+
+.headings.animate-heading {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Cursor Pointer for Carousel */
+.carousel-inner {
+    cursor: grab;
+}
+
+/* Swipe Styles (Optional for mobile feedback) */
+.carousel-inner img {
+    touch-action: pan-y;
+}
+
